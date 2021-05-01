@@ -1,0 +1,62 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+mult start (0)
+mult (0)
+mult start (0)
+mult (0)
+WORK_1 busy[0, 0], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+mult end
+mult end
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[0, 0], mult[   16,     9] (01)
+WORK_1 (01)
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+test passed(  4,   3 =>   5)
+mult start (0)
+mult (0)
+mult start (0)
+mult (0)
+WORK_1 busy[0, 0], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+mult end
+mult end
+WORK_1 busy[1, 1], mult[    0,     0] (01)
+WORK_1 busy[0, 0], mult[   49,    25] (01)
+WORK_1 (01)
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+WORK_2
+test passed(  7,   5 =>   8)
+all test passed
+$stop called at time : 96 ns : File "D:/Banan/ITMO/3/shemotehnika/lab2/main_function_tb.v" Line 52

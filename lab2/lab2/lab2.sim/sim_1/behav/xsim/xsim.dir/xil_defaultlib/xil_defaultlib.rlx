@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/Banan/ITMO/3/shemotehnika/lab2/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/Banan/ITMO/3/shemotehnika/lab2/main_function.v,1618484569,verilog,,D:/Banan/ITMO/3/shemotehnika/lab2/mult.v,,main_function,,,,,,,,
+D:/Banan/ITMO/3/shemotehnika/lab2/main_function_tb.v,1618484242,verilog,,,,main_function_tb,,,,,,,,
+D:/Banan/ITMO/3/shemotehnika/lab2/mult.v,1618483761,verilog,,D:/Banan/ITMO/3/shemotehnika/lab2/root.v,,mult,,,,,,,,
+D:/Banan/ITMO/3/shemotehnika/lab2/root.v,1618484001,verilog,,D:/Banan/ITMO/3/shemotehnika/lab2/main_function_tb.v,,root,,,,,,,,

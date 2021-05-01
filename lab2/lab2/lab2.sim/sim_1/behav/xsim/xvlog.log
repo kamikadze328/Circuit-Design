@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab2/main_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_function
+INFO: [VRFC 10-2458] undeclared symbol work1_done, assumed default net type wire [D:/Banan/ITMO/3/shemotehnika/lab2/main_function.v:76]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab2/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab2/root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module root
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab2/main_function_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_function_tb

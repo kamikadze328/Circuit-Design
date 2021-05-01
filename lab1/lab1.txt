@@ -1,0 +1,95 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/04/2021 12:57:46 AM
+// Design Name: 
+// Module Name: lab1
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module lab1 (
+    input a1,
+    input a2,
+    input a3,
+    input a4,
+    input a5,
+    output out
+);
+wire not_a1, not_a2, not_a3, not_a4, not_a5,
+	a1a2, a3a4, a1a5, a2a5, not_a1a2, not_a3a4, not_a1a5, not_a2a5, 
+	b1, b2, b3, b4, b5, b6, b7, b8, b9, b10,
+	c1, c2, c3, c4, c5, c6, c7, c8, c9, c10,
+	not_c1, not_c2, not_c3, not_c4, not_c5, not_c6, not_c7, not_c8, not_c9;
+
+
+nor(not_a1, a1, a1);
+nor(not_a2, a2, a2);
+nor(not_a3, a3, a3);
+nor(not_a4, a4, a4);
+nor(not_a5, a5, a5);
+
+nor(a1a2, not_a1, not_a2);
+nor(a3a4, not_a3, not_a4);
+nor(a1a5, not_a1, not_a5);
+nor(a2a5, not_a2, not_a5);
+
+nor(not_a1a2, a1a2, a1a2);
+nor(not_a3a4, a3a4, a3a4);
+nor(not_a1a5, a1a5, a1a5);
+nor(not_a2a5, a2a5, a2a5);
+
+nor(b1, not_a1a2, not_a3);
+nor(b2, not_a1a2, not_a4);
+nor(b3, not_a1a2, not_a5);
+nor(b4, not_a3a4, not_a1);
+nor(b5, not_a3a4, not_a2);
+nor(b6, not_a3a4, not_a5);
+nor(b7, not_a1a5, not_a3);
+nor(b8, not_a1a5, not_a4);
+nor(b9, not_a2a5, not_a3);
+nor(b10, not_a2a5, not_a4);
+
+nor(c1, b1, b2);
+nor(not_c1, c1, c1);
+
+nor(c2, not_c1, b2);
+nor(not_c2, c2, c2);
+
+nor(c3, not_c2, b3);
+nor(not_c3, c3, c3);
+
+nor(c4, not_c3, b4);
+nor(not_c4, c4, c4);
+
+nor(c5, not_c4, b5);
+nor(not_c5, c5, c5);
+
+nor(c6, not_c5, b6);
+nor(not_c6, c6, c6);
+
+nor(c7, not_c6, b7);
+nor(not_c7, c7, c7);
+
+nor(c8, not_c7, b8);
+nor(not_c8, c8, c8);
+
+nor(c9, not_c8, b9);
+nor(not_c9, c9, c9);
+
+nor(c10, not_c9, b10);
+nor(out, c10, c10);
+
+endmodule
+

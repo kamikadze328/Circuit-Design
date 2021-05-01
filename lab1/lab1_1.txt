@@ -1,0 +1,60 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/04/2021 01:06:33 AM
+// Design Name: 
+// Module Name: lab1_1
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module adder_tb ;
+	reg a1_in, a2_in, a3_in, a4_in, a5_in;
+	wire out_out;
+	lab1 lab1_1 (
+		.a1(a1_in),
+		.a2(a2_in),
+		.a3(a3_in),
+		.a4(a4_in),
+		.a5(a5_in),
+		.out(out_out)
+	);
+	integer i ;
+	reg [4:0] test_val;
+	reg expected_val;
+
+	initial begin
+		for(i=0; i<32; i=i+1) begin
+			test_val = i;
+			a1_in = test_val[0];
+			a2_in = test_val[1];
+			a3_in = test_val[2];
+			a4_in = test_val[3];
+			a5_in = test_val[4];
+			expected_val = (a1_in + a2_in + a3_in + a4_in + a5_in) > 2;
+			
+			#10
+			if(out_out == expected_val) begin
+				$display("The lab1 output is correct!!!");
+			end else begin
+				$display("The lab1 output is wrong!!!");
+			end
+			$display("[a1, a2, a3, a4, a5] = [%b, %b, %b, %b, %b]; out=%b;\n", a1_in, a2_in, a3_in, a4_in, a5_in, out_out);
+		
+		end
+		
+	   #10 $stop;
+	end
+endmodule
