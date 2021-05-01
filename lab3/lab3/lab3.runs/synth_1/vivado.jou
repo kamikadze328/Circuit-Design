@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 15 14:38:03 2021
+# Process ID: 5140
+# Current directory: D:/Banan/ITMO/3/shemotehnika/lab3/lab3/lab3.runs/synth_1
+# Command line: vivado.exe -log hardware_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hardware_top.tcl
+# Log file: D:/Banan/ITMO/3/shemotehnika/lab3/lab3/lab3.runs/synth_1/hardware_top.vds
+# Journal file: D:/Banan/ITMO/3/shemotehnika/lab3/lab3/lab3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source hardware_top.tcl -notrace
