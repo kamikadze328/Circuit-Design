@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 01d0ffd97f514444a3bf32a7b139aca4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_sqrt_behav xil_defaultlib.test_sqrt xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 12 for port 'y_b' [D:/Banan/ITMO/3/shemotehnika/lab3/new_lab3/new_lab3.srcs/sources_1/new/test_sqrt.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sqrt
+Compiling module xil_defaultlib.test_sqrt
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_sqrt_behav

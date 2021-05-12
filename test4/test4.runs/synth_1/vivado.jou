@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  7 10:30:32 2021
+# Process ID: 16060
+# Current directory: D:/Banan/ITMO/3/shemotehnika/test4/test4.runs/synth_1
+# Command line: vivado.exe -log main_sum_tests.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_sum_tests.tcl
+# Log file: D:/Banan/ITMO/3/shemotehnika/test4/test4.runs/synth_1/main_sum_tests.vds
+# Journal file: D:/Banan/ITMO/3/shemotehnika/test4/test4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main_sum_tests.tcl -notrace

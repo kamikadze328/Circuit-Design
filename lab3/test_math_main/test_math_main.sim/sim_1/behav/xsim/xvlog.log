@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab3/main_math.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hypotenuse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab3/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab3/sqrt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sqrt
+INFO: [VRFC 10-2458] undeclared symbol finished, assumed default net type wire [D:/Banan/ITMO/3/shemotehnika/lab3/sqrt.v:22]
+INFO: [VRFC 10-2458] undeclared symbol x_above_b, assumed default net type wire [D:/Banan/ITMO/3/shemotehnika/lab3/sqrt.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/lab3/test_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_main

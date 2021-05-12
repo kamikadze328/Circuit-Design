@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/test4/test4.srcs/sources_1/new/2bit_sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/test4/test4.srcs/sources_1/new/main_sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Banan/ITMO/3/shemotehnika/test4/test4.srcs/sources_1/new/main_sum_tests.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_sum_tests
