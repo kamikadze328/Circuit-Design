@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed May 12 13:01:05 2021
+| Date         : Thu May 13 13:51:30 2021
 | Host         : LAPTOP-5QBBQL9O running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Main_control_sets_placed.rpt
 | Design       : Main
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     1 |
-|    Minimum number of control sets                        |     1 |
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     6 |
+| Unused register locations in slices containing registers |    40 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     1 |
+| Total control sets |    12 |
 | >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     0 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     0 |
+| >= 12 to < 14      |     4 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     1 |
+| >= 16              |     7 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,22 +58,33 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |            7 |
+| No           | No                    | No                     |              12 |            6 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              25 |            9 |
+| Yes          | No                    | No                     |              17 |            4 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |             138 |           35 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+------------------+------------------+----------------+--------------+
-|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------+------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |               |                  |                7 |             26 |         3.71 |
-+----------------+---------------+------------------+------------------+----------------+--------------+
++----------------+-----------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                 Enable Signal                 |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | math_module/sqrt_calc/x[23]_i_2_n_0           | math_module/sqrt_calc/x[23]_i_1_n_0    |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG |                                               |                                        |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG | math_module/sqrt_calc/y_b[11]_i_1_n_0         | math_module/rst_sqrt                   |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG | math_module/sqrt_calc/E[0]                    | rst_IBUF                               |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG | math_module/sqrt_calc/state__0_0[0]           | math_module/rst_sqrt                   |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG | math_module/a_square_calc/state               | math_module/a_square_calc/clear        |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | math_module/b_square_calc/state_reg_0         | math_module/b_square_calc/y[0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | math_module/a_square_calc/E[0]                | rst_IBUF                               |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG | math_module/sqrt_calc/x[23]_i_2_n_0           |                                        |                4 |             17 |         4.25 |
+|  clk_IBUF_BUFG | math_module/sqrt_calc/b[22]_i_1_n_0           | math_module/rst_sqrt                   |                5 |             23 |         4.60 |
+|  clk_IBUF_BUFG | math_module/sqrt_calc/part_result[22]_i_1_n_0 | math_module/rst_sqrt                   |                8 |             23 |         2.88 |
+|  clk_IBUF_BUFG |                                               | rst_IBUF                               |                9 |             25 |         2.78 |
++----------------+-----------------------------------------------+----------------------------------------+------------------+----------------+--------------+
 
 

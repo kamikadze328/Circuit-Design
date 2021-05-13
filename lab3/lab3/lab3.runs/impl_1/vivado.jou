@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed May 12 13:00:36 2021
-# Process ID: 4388
+# Start of session at: Thu May 13 13:51:00 2021
+# Process ID: 4080
 # Current directory: D:/Banan/ITMO/3/shemotehnika/lab3/lab3/lab3.runs/impl_1
 # Command line: vivado.exe -log Main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
 # Log file: D:/Banan/ITMO/3/shemotehnika/lab3/lab3/lab3.runs/impl_1/Main.vdi

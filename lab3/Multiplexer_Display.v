@@ -33,8 +33,8 @@ module M_Nexys4_DISP(
  wire O_SEG_A, O_SEG_B, O_SEG_C, O_SEG_D, O_SEG_E, O_SEG_F, O_SEG_G;
  reg [7:0] ANODE_DC;
  
- reg [19:0] clk_counter = 0;
- localparam MAX_clk_counter = 20'd400000;
+ reg [19:0] clk_counter = 'b0;
+ reg [19:0] MAX_clk_counter = 20'd400000;
 
 //------------------------------------------
 // Display Digit Counter:
@@ -46,8 +46,10 @@ module M_Nexys4_DISP(
     else if(clk_counter == MAX_clk_counter) begin
         DIGIT_CNT <= ((DIGIT_CNT + 1'b1) == 2'b11) ? 2'b00 : (DIGIT_CNT + 1'b1);
         clk_counter <= 'b0;
-    end
-    clk_counter <= clk_counter + 1'b1;
+    end else begin
+        clk_counter <= clk_counter + 1'b1;
+    end 
+    //clk_counter <= clk_counter + 1'b1;
 end
 //------------------------------------------
 // Display Digit Multiplexer:

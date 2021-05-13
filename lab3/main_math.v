@@ -60,6 +60,9 @@ always @(posedge clk)
             IDLE: begin
                 square_sum <= 0;
                 if (start) begin
+                    rst_mult0 <= 0;
+                    rst_mult1 <= 0;  
+                    rst_sqrt <= 0;                  
                     y <= 0;
                     start_mult0 <= 1;
                     start_mult1 <= 1;
@@ -89,13 +92,13 @@ always @(posedge clk)
         endcase
     end
     
-always @(rst_sqrt) begin
+/*always @(rst_sqrt) begin
     if(rst_sqrt == 1) rst_sqrt <= 0;
-end
-always @(rst_mult0, rst_mult1) begin
+end*/
+/*always @(rst_mult0, rst_mult1) begin
     if(rst_mult1 == 1) rst_mult1 <= 0;
     if(rst_mult0 == 1) rst_mult0 <= 0;
-end
+end*/
 /*always @(start_mult) begin
     if(start_mult == 1) start_mult <= 0;
 end*/
