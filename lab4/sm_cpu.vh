@@ -31,7 +31,7 @@
                               //         Rt = memory[Rs + Immed]
 `define C_SW        6'b101011 //I-type,  Store Word
                               //         memory[Rs + Immed] = Rt
-`define C_MYSQRT	6'b000001 //I-type,  
+`define C_MYSQRT	6'b000001 //I-type,  sqrt(Rs) = Rt   
                               //         							  
 
 //instruction function field
